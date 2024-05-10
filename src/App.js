@@ -17,13 +17,13 @@ function App() {
 
   useEffect(() => {
     fetchQuotes(apiSrc)
-  }, [apiSrc])
+  })
 
   //this function updates to a new quote and author at random
   const newQA = () => {
-      let randomNum =  Math.floor(Math.random() * quotesArray.length);
-      setQuote(quotesArray[randomNum].quote);
-      setAuthor(quotesArray[randomNum].author);
+      setNumber( Math.floor(Math.random() * quotesArray.length));
+      setQuote(quotesArray[randomNumber].quote);
+      setAuthor(quotesArray[randomNumber].author);
   }
 
 
